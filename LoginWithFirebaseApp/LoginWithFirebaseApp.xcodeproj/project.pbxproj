@@ -7,14 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08BC2A5DBC8EED0FF1A1E89B /* libPods-LoginWithFirebaseAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7CCF219BF77396470A70F /* libPods-LoginWithFirebaseAppUITests.a */; };
+		1808D3A820E937E70012CFC2 /* PrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808D3A520E937E60012CFC2 /* PrepareViewController.m */; };
+		1808D3A920E937E70012CFC2 /* PrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808D3A520E937E60012CFC2 /* PrepareViewController.m */; };
+		1808D3AA20E937E70012CFC2 /* PrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808D3A520E937E60012CFC2 /* PrepareViewController.m */; };
+		1808D3AB20E937E70012CFC2 /* PrepareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1808D3A620E937E60012CFC2 /* PrepareViewController.xib */; };
+		1808D3AC20E937E70012CFC2 /* PrepareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1808D3A620E937E60012CFC2 /* PrepareViewController.xib */; };
+		1808D3AD20E937E70012CFC2 /* PrepareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1808D3A620E937E60012CFC2 /* PrepareViewController.xib */; };
+		1832C79720E9222500407B74 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79420E9222500407B74 /* TopViewController.xib */; };
+		1832C79820E9222500407B74 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79420E9222500407B74 /* TopViewController.xib */; };
+		1832C79920E9222500407B74 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79420E9222500407B74 /* TopViewController.xib */; };
+		1832C79A20E9222500407B74 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C79520E9222500407B74 /* TopViewController.m */; };
+		1832C79B20E9222500407B74 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C79520E9222500407B74 /* TopViewController.m */; };
+		1832C79C20E9222500407B74 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C79520E9222500407B74 /* TopViewController.m */; };
+		1832C7B420E9259800407B74 /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79D20E9259400407B74 /* ehon_hahako.png */; };
+		1832C7B520E9259800407B74 /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79D20E9259400407B74 /* ehon_hahako.png */; };
+		1832C7B620E9259800407B74 /* ehon_hahako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79D20E9259400407B74 /* ehon_hahako.png */; };
+		1832C7B720E9259800407B74 /* kutsu_nugu_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79E20E9259400407B74 /* kutsu_nugu_good.png */; };
+		1832C7B820E9259800407B74 /* kutsu_nugu_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79E20E9259400407B74 /* kutsu_nugu_good.png */; };
+		1832C7B920E9259800407B74 /* kutsu_nugu_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79E20E9259400407B74 /* kutsu_nugu_good.png */; };
+		1832C7BA20E9259800407B74 /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79F20E9259400407B74 /* book_renrakuchou.png */; };
+		1832C7BB20E9259800407B74 /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79F20E9259400407B74 /* book_renrakuchou.png */; };
+		1832C7BC20E9259800407B74 /* book_renrakuchou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C79F20E9259400407B74 /* book_renrakuchou.png */; };
+		1832C7BD20E9259800407B74 /* family_bed_kawanoji.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A020E9259500407B74 /* family_bed_kawanoji.png */; };
+		1832C7BE20E9259800407B74 /* family_bed_kawanoji.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A020E9259500407B74 /* family_bed_kawanoji.png */; };
+		1832C7BF20E9259800407B74 /* family_bed_kawanoji.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A020E9259500407B74 /* family_bed_kawanoji.png */; };
+		1832C7C020E9259800407B74 /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A120E9259500407B74 /* player_button08_plus.png */; };
+		1832C7C120E9259800407B74 /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A120E9259500407B74 /* player_button08_plus.png */; };
+		1832C7C220E9259800407B74 /* player_button08_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A120E9259500407B74 /* player_button08_plus.png */; };
+		1832C7C320E9259800407B74 /* tearai_hand_suidou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A220E9259500407B74 /* tearai_hand_suidou.png */; };
+		1832C7C420E9259800407B74 /* tearai_hand_suidou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A220E9259500407B74 /* tearai_hand_suidou.png */; };
+		1832C7C520E9259800407B74 /* tearai_hand_suidou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A220E9259500407B74 /* tearai_hand_suidou.png */; };
+		1832C7C620E9259800407B74 /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A320E9259500407B74 /* text_kakko_kari.png */; };
+		1832C7C720E9259800407B74 /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A320E9259500407B74 /* text_kakko_kari.png */; };
+		1832C7C820E9259800407B74 /* text_kakko_kari.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A320E9259500407B74 /* text_kakko_kari.png */; };
+		1832C7C920E9259800407B74 /* family_hamigaki_shiage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A420E9259500407B74 /* family_hamigaki_shiage.png */; };
+		1832C7CA20E9259800407B74 /* family_hamigaki_shiage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A420E9259500407B74 /* family_hamigaki_shiage.png */; };
+		1832C7CB20E9259800407B74 /* family_hamigaki_shiage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A420E9259500407B74 /* family_hamigaki_shiage.png */; };
+		1832C7CC20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A520E9259500407B74 /* shopping_supermarket_family_mother.png */; };
+		1832C7CD20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A520E9259500407B74 /* shopping_supermarket_family_mother.png */; };
+		1832C7CE20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A520E9259500407B74 /* shopping_supermarket_family_mother.png */; };
+		1832C7CF20E9259800407B74 /* home_kitaku_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A620E9259600407B74 /* home_kitaku_girl.png */; };
+		1832C7D020E9259800407B74 /* home_kitaku_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A620E9259600407B74 /* home_kitaku_girl.png */; };
+		1832C7D120E9259800407B74 /* home_kitaku_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A620E9259600407B74 /* home_kitaku_girl.png */; };
+		1832C7D220E9259800407B74 /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A720E9259600407B74 /* bluebird_baka.png */; };
+		1832C7D320E9259800407B74 /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A720E9259600407B74 /* bluebird_baka.png */; };
+		1832C7D420E9259800407B74 /* bluebird_baka.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A720E9259600407B74 /* bluebird_baka.png */; };
+		1832C7D520E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A820E9259600407B74 /* hanko_taihenyokudekimashita.png */; };
+		1832C7D620E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A820E9259600407B74 /* hanko_taihenyokudekimashita.png */; };
+		1832C7D720E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A820E9259600407B74 /* hanko_taihenyokudekimashita.png */; };
+		1832C7D820E9259800407B74 /* mushiyoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A920E9259600407B74 /* mushiyoke.png */; };
+		1832C7D920E9259800407B74 /* mushiyoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A920E9259600407B74 /* mushiyoke.png */; };
+		1832C7DA20E9259800407B74 /* mushiyoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7A920E9259600407B74 /* mushiyoke.png */; };
+		1832C7DB20E9259800407B74 /* ojigi_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AA20E9259600407B74 /* ojigi_girl.png */; };
+		1832C7DC20E9259800407B74 /* ojigi_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AA20E9259600407B74 /* ojigi_girl.png */; };
+		1832C7DD20E9259800407B74 /* ojigi_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AA20E9259600407B74 /* ojigi_girl.png */; };
+		1832C7DE20E9259800407B74 /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AB20E9259600407B74 /* sentaku_kago.png */; };
+		1832C7DF20E9259800407B74 /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AB20E9259600407B74 /* sentaku_kago.png */; };
+		1832C7E020E9259800407B74 /* sentaku_kago.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AB20E9259600407B74 /* sentaku_kago.png */; };
+		1832C7E120E9259800407B74 /* bed_girl_wake.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AC20E9259700407B74 /* bed_girl_wake.png */; };
+		1832C7E220E9259800407B74 /* bed_girl_wake.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AC20E9259700407B74 /* bed_girl_wake.png */; };
+		1832C7E320E9259800407B74 /* bed_girl_wake.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AC20E9259700407B74 /* bed_girl_wake.png */; };
+		1832C7E420E9259800407B74 /* food_gohan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AD20E9259700407B74 /* food_gohan.png */; };
+		1832C7E520E9259800407B74 /* food_gohan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AD20E9259700407B74 /* food_gohan.png */; };
+		1832C7E620E9259800407B74 /* food_gohan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AD20E9259700407B74 /* food_gohan.png */; };
+		1832C7E720E9259800407B74 /* pet_oyatsu_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AE20E9259700407B74 /* pet_oyatsu_dog.png */; };
+		1832C7E820E9259800407B74 /* pet_oyatsu_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AE20E9259700407B74 /* pet_oyatsu_dog.png */; };
+		1832C7E920E9259800407B74 /* pet_oyatsu_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AE20E9259700407B74 /* pet_oyatsu_dog.png */; };
+		1832C7EA20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AF20E9259700407B74 /* pet_toilet_sheet_dog.png */; };
+		1832C7EB20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AF20E9259700407B74 /* pet_toilet_sheet_dog.png */; };
+		1832C7EC20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7AF20E9259700407B74 /* pet_toilet_sheet_dog.png */; };
+		1832C7ED20E9259800407B74 /* toiletKid.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B020E9259700407B74 /* toiletKid.png */; };
+		1832C7EE20E9259800407B74 /* toiletKid.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B020E9259700407B74 /* toiletKid.png */; };
+		1832C7EF20E9259800407B74 /* toiletKid.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B020E9259700407B74 /* toiletKid.png */; };
+		1832C7F020E9259800407B74 /* ensoku_goods.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B120E9259800407B74 /* ensoku_goods.png */; };
+		1832C7F120E9259800407B74 /* ensoku_goods.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B120E9259800407B74 /* ensoku_goods.png */; };
+		1832C7F220E9259800407B74 /* ensoku_goods.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B120E9259800407B74 /* ensoku_goods.png */; };
+		1832C7F320E9259800407B74 /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B220E9259800407B74 /* kouen_oyako.png */; };
+		1832C7F420E9259800407B74 /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B220E9259800407B74 /* kouen_oyako.png */; };
+		1832C7F520E9259800407B74 /* kouen_oyako.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B220E9259800407B74 /* kouen_oyako.png */; };
+		1832C7F620E9259800407B74 /* kigaeGirl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B320E9259800407B74 /* kigaeGirl.png */; };
+		1832C7F720E9259800407B74 /* kigaeGirl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B320E9259800407B74 /* kigaeGirl.png */; };
+		1832C7F820E9259800407B74 /* kigaeGirl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7B320E9259800407B74 /* kigaeGirl.png */; };
+		1832C80220E9276500407B74 /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C7F920E9276300407B74 /* addOriginalTaskViewController.m */; };
+		1832C80320E9276500407B74 /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C7F920E9276300407B74 /* addOriginalTaskViewController.m */; };
+		1832C80420E9276500407B74 /* addOriginalTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C7F920E9276300407B74 /* addOriginalTaskViewController.m */; };
+		1832C80520E9276500407B74 /* TaskListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FA20E9276300407B74 /* TaskListTableViewController.xib */; };
+		1832C80620E9276500407B74 /* TaskListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FA20E9276300407B74 /* TaskListTableViewController.xib */; };
+		1832C80720E9276500407B74 /* TaskListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FA20E9276300407B74 /* TaskListTableViewController.xib */; };
+		1832C80820E9276500407B74 /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FB20E9276300407B74 /* addOriginalTaskViewController.xib */; };
+		1832C80920E9276500407B74 /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FB20E9276300407B74 /* addOriginalTaskViewController.xib */; };
+		1832C80A20E9276500407B74 /* addOriginalTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FB20E9276300407B74 /* addOriginalTaskViewController.xib */; };
+		1832C80B20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FC20E9276400407B74 /* TaskListDetailTableViewCell.xib */; };
+		1832C80C20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FC20E9276400407B74 /* TaskListDetailTableViewCell.xib */; };
+		1832C80D20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1832C7FC20E9276400407B74 /* TaskListDetailTableViewCell.xib */; };
+		1832C80E20E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80020E9276400407B74 /* TaskListDetailTableViewCell.m */; };
+		1832C80F20E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80020E9276400407B74 /* TaskListDetailTableViewCell.m */; };
+		1832C81020E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80020E9276400407B74 /* TaskListDetailTableViewCell.m */; };
+		1832C81120E9276500407B74 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80120E9276500407B74 /* TaskListTableViewController.m */; };
+		1832C81220E9276500407B74 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80120E9276500407B74 /* TaskListTableViewController.m */; };
+		1832C81320E9276500407B74 /* TaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832C80120E9276500407B74 /* TaskListTableViewController.m */; };
+		183FF1EC20EA6D950014F25F /* ContentsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FF1EB20EA6D950014F25F /* ContentsManager.m */; };
+		183FF1ED20EA6D950014F25F /* ContentsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FF1EB20EA6D950014F25F /* ContentsManager.m */; };
+		183FF1EE20EA6D950014F25F /* ContentsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FF1EB20EA6D950014F25F /* ContentsManager.m */; };
+		186DF75620E7D8D800C5375A /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75420E7D8D700C5375A /* check.png */; };
+		186DF75720E7D8D800C5375A /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75420E7D8D700C5375A /* check.png */; };
+		186DF75820E7D8D800C5375A /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75420E7D8D700C5375A /* check.png */; };
+		186DF75920E7D8D800C5375A /* nocheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75520E7D8D700C5375A /* nocheck.png */; };
+		186DF75A20E7D8D800C5375A /* nocheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75520E7D8D700C5375A /* nocheck.png */; };
+		186DF75B20E7D8D800C5375A /* nocheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DF75520E7D8D700C5375A /* nocheck.png */; };
 		18857A1120E285D900EB2EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857A1020E285D900EB2EB4 /* AppDelegate.m */; };
 		18857A1420E285D900EB2EB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857A1320E285D900EB2EB4 /* ViewController.m */; };
-		18857A1720E285D900EB2EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18857A1520E285D900EB2EB4 /* Main.storyboard */; };
 		18857A1920E285DC00EB2EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18857A1820E285DC00EB2EB4 /* Assets.xcassets */; };
 		18857A1C20E285DC00EB2EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18857A1A20E285DC00EB2EB4 /* LaunchScreen.storyboard */; };
 		18857A1F20E285DC00EB2EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857A1E20E285DC00EB2EB4 /* main.m */; };
 		18857A2920E285DD00EB2EB4 /* LoginWithFirebaseAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857A2820E285DD00EB2EB4 /* LoginWithFirebaseAppTests.m */; };
 		18857A3420E285DD00EB2EB4 /* LoginWithFirebaseAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857A3320E285DD00EB2EB4 /* LoginWithFirebaseAppUITests.m */; };
+		18857A4220E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4120E2876C00EB2EB4 /* GoogleService-Info.plist */; };
+		18857A4320E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4120E2876C00EB2EB4 /* GoogleService-Info.plist */; };
+		18857A4420E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4120E2876C00EB2EB4 /* GoogleService-Info.plist */; };
+		18857A4620E28A2400EB2EB4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4520E28A2400EB2EB4 /* ViewController.xib */; };
+		18857A4720E28A2400EB2EB4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4520E28A2400EB2EB4 /* ViewController.xib */; };
+		18857A4820E28A2400EB2EB4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18857A4520E28A2400EB2EB4 /* ViewController.xib */; };
+		18860F8420E3CE970029DD00 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18860F8120E3CE970029DD00 /* NextViewController.xib */; };
+		18860F8520E3CE970029DD00 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18860F8120E3CE970029DD00 /* NextViewController.xib */; };
+		18860F8620E3CE970029DD00 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18860F8120E3CE970029DD00 /* NextViewController.xib */; };
+		18860F8720E3CE970029DD00 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18860F8220E3CE970029DD00 /* NextViewController.m */; };
+		18860F8820E3CE970029DD00 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18860F8220E3CE970029DD00 /* NextViewController.m */; };
+		18860F8920E3CE970029DD00 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18860F8220E3CE970029DD00 /* NextViewController.m */; };
+		4A97B4221FF4097D85BF29B8 /* libPods-LoginWithFirebaseApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB202D4EA9ED9DF67333AEEB /* libPods-LoginWithFirebaseApp.a */; };
+		AFEA65094C86A2531A6CE915 /* libPods-LoginWithFirebaseAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7158F77D651E22EF1F785B /* libPods-LoginWithFirebaseAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +157,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026BB4CC2DEBA15F340C12F7 /* Pods-LoginWithFirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseApp/Pods-LoginWithFirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
+		07A3069EABA9DE27CA8371C0 /* Pods-LoginWithFirebaseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseAppUITests/Pods-LoginWithFirebaseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1808D3A520E937E60012CFC2 /* PrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrepareViewController.m; sourceTree = "<group>"; };
+		1808D3A620E937E60012CFC2 /* PrepareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrepareViewController.xib; sourceTree = "<group>"; };
+		1808D3A720E937E70012CFC2 /* PrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrepareViewController.h; sourceTree = "<group>"; };
+		1832C79420E9222500407B74 /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		1832C79520E9222500407B74 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		1832C79620E9222500407B74 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		1832C79D20E9259400407B74 /* ehon_hahako.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ehon_hahako.png; sourceTree = "<group>"; };
+		1832C79E20E9259400407B74 /* kutsu_nugu_good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kutsu_nugu_good.png; sourceTree = "<group>"; };
+		1832C79F20E9259400407B74 /* book_renrakuchou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_renrakuchou.png; sourceTree = "<group>"; };
+		1832C7A020E9259500407B74 /* family_bed_kawanoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = family_bed_kawanoji.png; sourceTree = "<group>"; };
+		1832C7A120E9259500407B74 /* player_button08_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_button08_plus.png; sourceTree = "<group>"; };
+		1832C7A220E9259500407B74 /* tearai_hand_suidou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tearai_hand_suidou.png; sourceTree = "<group>"; };
+		1832C7A320E9259500407B74 /* text_kakko_kari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_kakko_kari.png; sourceTree = "<group>"; };
+		1832C7A420E9259500407B74 /* family_hamigaki_shiage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = family_hamigaki_shiage.png; sourceTree = "<group>"; };
+		1832C7A520E9259500407B74 /* shopping_supermarket_family_mother.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping_supermarket_family_mother.png; sourceTree = "<group>"; };
+		1832C7A620E9259600407B74 /* home_kitaku_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_kitaku_girl.png; sourceTree = "<group>"; };
+		1832C7A720E9259600407B74 /* bluebird_baka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebird_baka.png; sourceTree = "<group>"; };
+		1832C7A820E9259600407B74 /* hanko_taihenyokudekimashita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanko_taihenyokudekimashita.png; sourceTree = "<group>"; };
+		1832C7A920E9259600407B74 /* mushiyoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mushiyoke.png; sourceTree = "<group>"; };
+		1832C7AA20E9259600407B74 /* ojigi_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ojigi_girl.png; sourceTree = "<group>"; };
+		1832C7AB20E9259600407B74 /* sentaku_kago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sentaku_kago.png; sourceTree = "<group>"; };
+		1832C7AC20E9259700407B74 /* bed_girl_wake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bed_girl_wake.png; sourceTree = "<group>"; };
+		1832C7AD20E9259700407B74 /* food_gohan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_gohan.png; sourceTree = "<group>"; };
+		1832C7AE20E9259700407B74 /* pet_oyatsu_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pet_oyatsu_dog.png; sourceTree = "<group>"; };
+		1832C7AF20E9259700407B74 /* pet_toilet_sheet_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pet_toilet_sheet_dog.png; sourceTree = "<group>"; };
+		1832C7B020E9259700407B74 /* toiletKid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toiletKid.png; sourceTree = "<group>"; };
+		1832C7B120E9259800407B74 /* ensoku_goods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ensoku_goods.png; sourceTree = "<group>"; };
+		1832C7B220E9259800407B74 /* kouen_oyako.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kouen_oyako.png; sourceTree = "<group>"; };
+		1832C7B320E9259800407B74 /* kigaeGirl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kigaeGirl.png; sourceTree = "<group>"; };
+		1832C7F920E9276300407B74 /* addOriginalTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addOriginalTaskViewController.m; sourceTree = "<group>"; };
+		1832C7FA20E9276300407B74 /* TaskListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskListTableViewController.xib; sourceTree = "<group>"; };
+		1832C7FB20E9276300407B74 /* addOriginalTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addOriginalTaskViewController.xib; sourceTree = "<group>"; };
+		1832C7FC20E9276400407B74 /* TaskListDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskListDetailTableViewCell.xib; sourceTree = "<group>"; };
+		1832C7FD20E9276400407B74 /* TaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListTableViewController.h; sourceTree = "<group>"; };
+		1832C7FE20E9276400407B74 /* TaskListDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListDetailTableViewCell.h; sourceTree = "<group>"; };
+		1832C7FF20E9276400407B74 /* addOriginalTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addOriginalTaskViewController.h; sourceTree = "<group>"; };
+		1832C80020E9276400407B74 /* TaskListDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListDetailTableViewCell.m; sourceTree = "<group>"; };
+		1832C80120E9276500407B74 /* TaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListTableViewController.m; sourceTree = "<group>"; };
+		183FF1EA20EA6D950014F25F /* ContentsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentsManager.h; sourceTree = "<group>"; };
+		183FF1EB20EA6D950014F25F /* ContentsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentsManager.m; sourceTree = "<group>"; };
+		186DF75420E7D8D700C5375A /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		186DF75520E7D8D700C5375A /* nocheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nocheck.png; sourceTree = "<group>"; };
 		18857A0C20E285D900EB2EB4 /* LoginWithFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18857A0F20E285D900EB2EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18857A1020E285D900EB2EB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18857A1220E285D900EB2EB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18857A1320E285D900EB2EB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18857A1620E285D900EB2EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18857A1820E285DC00EB2EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18857A1B20E285DC00EB2EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18857A1D20E285DC00EB2EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +216,18 @@
 		18857A2F20E285DD00EB2EB4 /* LoginWithFirebaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithFirebaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18857A3320E285DD00EB2EB4 /* LoginWithFirebaseAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginWithFirebaseAppUITests.m; sourceTree = "<group>"; };
 		18857A3520E285DD00EB2EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18857A4120E2876C00EB2EB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18857A4520E28A2400EB2EB4 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		18860F8120E3CE970029DD00 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		18860F8220E3CE970029DD00 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		18860F8320E3CE970029DD00 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		24EAB9436351F55D5EE66ED9 /* Pods-LoginWithFirebaseAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseAppUITests/Pods-LoginWithFirebaseAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C9FE3837333970DA4DD0EC9 /* Pods-LoginWithFirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseApp/Pods-LoginWithFirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7158F77D651E22EF1F785B /* libPods-LoginWithFirebaseAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginWithFirebaseAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9C65485B3CB0FAAC09D593 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA1EDFB32C16839FC25F3C92 /* Pods-LoginWithFirebaseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB202D4EA9ED9DF67333AEEB /* libPods-LoginWithFirebaseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginWithFirebaseApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F7CCF219BF77396470A70F /* libPods-LoginWithFirebaseAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginWithFirebaseAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A97B4221FF4097D85BF29B8 /* libPods-LoginWithFirebaseApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEA65094C86A2531A6CE915 /* libPods-LoginWithFirebaseAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +251,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BC2A5DBC8EED0FF1A1E89B /* libPods-LoginWithFirebaseAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186DF75220E7D8D700C5375A /* supportFile */ = {
+			isa = PBXGroup;
+			children = (
+				186DF75320E7D8D700C5375A /* image */,
+			);
+			path = supportFile;
+			sourceTree = "<group>";
+		};
+		186DF75320E7D8D700C5375A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				1832C7AC20E9259700407B74 /* bed_girl_wake.png */,
+				1832C7A720E9259600407B74 /* bluebird_baka.png */,
+				1832C79F20E9259400407B74 /* book_renrakuchou.png */,
+				1832C79D20E9259400407B74 /* ehon_hahako.png */,
+				1832C7B120E9259800407B74 /* ensoku_goods.png */,
+				1832C7A020E9259500407B74 /* family_bed_kawanoji.png */,
+				1832C7A420E9259500407B74 /* family_hamigaki_shiage.png */,
+				1832C7AD20E9259700407B74 /* food_gohan.png */,
+				1832C7A820E9259600407B74 /* hanko_taihenyokudekimashita.png */,
+				1832C7A620E9259600407B74 /* home_kitaku_girl.png */,
+				1832C7B320E9259800407B74 /* kigaeGirl.png */,
+				1832C7B220E9259800407B74 /* kouen_oyako.png */,
+				1832C79E20E9259400407B74 /* kutsu_nugu_good.png */,
+				1832C7A920E9259600407B74 /* mushiyoke.png */,
+				1832C7AA20E9259600407B74 /* ojigi_girl.png */,
+				1832C7AE20E9259700407B74 /* pet_oyatsu_dog.png */,
+				1832C7AF20E9259700407B74 /* pet_toilet_sheet_dog.png */,
+				1832C7A120E9259500407B74 /* player_button08_plus.png */,
+				1832C7AB20E9259600407B74 /* sentaku_kago.png */,
+				1832C7A520E9259500407B74 /* shopping_supermarket_family_mother.png */,
+				1832C7A220E9259500407B74 /* tearai_hand_suidou.png */,
+				1832C7A320E9259500407B74 /* text_kakko_kari.png */,
+				1832C7B020E9259700407B74 /* toiletKid.png */,
+				186DF75420E7D8D700C5375A /* check.png */,
+				186DF75520E7D8D700C5375A /* nocheck.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		18857A0320E285D900EB2EB4 = {
 			isa = PBXGroup;
 			children = (
+				186DF75220E7D8D700C5375A /* supportFile */,
 				18857A0E20E285D900EB2EB4 /* LoginWithFirebaseApp */,
 				18857A2720E285DD00EB2EB4 /* LoginWithFirebaseAppTests */,
 				18857A3220E285DD00EB2EB4 /* LoginWithFirebaseAppUITests */,
 				18857A0D20E285D900EB2EB4 /* Products */,
+				1FC9549C1DB29F4A96E4B737 /* Pods */,
+				FC815E699F5B6D32CB33F3CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +324,34 @@
 		18857A0E20E285D900EB2EB4 /* LoginWithFirebaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				183FF1EA20EA6D950014F25F /* ContentsManager.h */,
+				183FF1EB20EA6D950014F25F /* ContentsManager.m */,
+				1808D3A720E937E70012CFC2 /* PrepareViewController.h */,
+				1808D3A520E937E60012CFC2 /* PrepareViewController.m */,
+				1808D3A620E937E60012CFC2 /* PrepareViewController.xib */,
+				1832C7FF20E9276400407B74 /* addOriginalTaskViewController.h */,
+				1832C7F920E9276300407B74 /* addOriginalTaskViewController.m */,
+				1832C7FB20E9276300407B74 /* addOriginalTaskViewController.xib */,
+				1832C7FE20E9276400407B74 /* TaskListDetailTableViewCell.h */,
+				1832C80020E9276400407B74 /* TaskListDetailTableViewCell.m */,
+				1832C7FC20E9276400407B74 /* TaskListDetailTableViewCell.xib */,
+				1832C7FD20E9276400407B74 /* TaskListTableViewController.h */,
+				1832C80120E9276500407B74 /* TaskListTableViewController.m */,
+				1832C7FA20E9276300407B74 /* TaskListTableViewController.xib */,
+				1832C79620E9222500407B74 /* TopViewController.h */,
+				1832C79520E9222500407B74 /* TopViewController.m */,
+				1832C79420E9222500407B74 /* TopViewController.xib */,
+				18860F8320E3CE970029DD00 /* NextViewController.h */,
+				18860F8220E3CE970029DD00 /* NextViewController.m */,
+				18860F8120E3CE970029DD00 /* NextViewController.xib */,
 				18857A0F20E285D900EB2EB4 /* AppDelegate.h */,
 				18857A1020E285D900EB2EB4 /* AppDelegate.m */,
 				18857A1220E285D900EB2EB4 /* ViewController.h */,
 				18857A1320E285D900EB2EB4 /* ViewController.m */,
-				18857A1520E285D900EB2EB4 /* Main.storyboard */,
+				18857A4520E28A2400EB2EB4 /* ViewController.xib */,
 				18857A1820E285DC00EB2EB4 /* Assets.xcassets */,
 				18857A1A20E285DC00EB2EB4 /* LaunchScreen.storyboard */,
+				18857A4120E2876C00EB2EB4 /* GoogleService-Info.plist */,
 				18857A1D20E285DC00EB2EB4 /* Info.plist */,
 				18857A1E20E285DC00EB2EB4 /* main.m */,
 			);
@@ -132,6 +376,29 @@
 			path = LoginWithFirebaseAppUITests;
 			sourceTree = "<group>";
 		};
+		1FC9549C1DB29F4A96E4B737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C9FE3837333970DA4DD0EC9 /* Pods-LoginWithFirebaseApp.debug.xcconfig */,
+				026BB4CC2DEBA15F340C12F7 /* Pods-LoginWithFirebaseApp.release.xcconfig */,
+				6A9C65485B3CB0FAAC09D593 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */,
+				AA1EDFB32C16839FC25F3C92 /* Pods-LoginWithFirebaseAppTests.release.xcconfig */,
+				24EAB9436351F55D5EE66ED9 /* Pods-LoginWithFirebaseAppUITests.debug.xcconfig */,
+				07A3069EABA9DE27CA8371C0 /* Pods-LoginWithFirebaseAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC815E699F5B6D32CB33F3CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB202D4EA9ED9DF67333AEEB /* libPods-LoginWithFirebaseApp.a */,
+				5A7158F77D651E22EF1F785B /* libPods-LoginWithFirebaseAppTests.a */,
+				F1F7CCF219BF77396470A70F /* libPods-LoginWithFirebaseAppUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +406,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18857A3820E285DD00EB2EB4 /* Build configuration list for PBXNativeTarget "LoginWithFirebaseApp" */;
 			buildPhases = (
+				10908FACA08FDFDED3ACCFBE /* [CP] Check Pods Manifest.lock */,
 				18857A0820E285D900EB2EB4 /* Sources */,
 				18857A0920E285D900EB2EB4 /* Frameworks */,
 				18857A0A20E285D900EB2EB4 /* Resources */,
@@ -156,6 +424,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18857A3B20E285DD00EB2EB4 /* Build configuration list for PBXNativeTarget "LoginWithFirebaseAppTests" */;
 			buildPhases = (
+				996CCCD18149C9F9D6A40E05 /* [CP] Check Pods Manifest.lock */,
 				18857A2020E285DD00EB2EB4 /* Sources */,
 				18857A2120E285DD00EB2EB4 /* Frameworks */,
 				18857A2220E285DD00EB2EB4 /* Resources */,
@@ -174,6 +443,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18857A3E20E285DD00EB2EB4 /* Build configuration list for PBXNativeTarget "LoginWithFirebaseAppUITests" */;
 			buildPhases = (
+				495985F6A6B0E80C0E944A60 /* [CP] Check Pods Manifest.lock */,
 				18857A2B20E285DD00EB2EB4 /* Sources */,
 				18857A2C20E285DD00EB2EB4 /* Frameworks */,
 				18857A2D20E285DD00EB2EB4 /* Resources */,
@@ -235,9 +505,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1832C7DB20E9259800407B74 /* ojigi_girl.png in Resources */,
+				1832C7ED20E9259800407B74 /* toiletKid.png in Resources */,
+				1832C7E720E9259800407B74 /* pet_oyatsu_dog.png in Resources */,
+				1832C79720E9222500407B74 /* TopViewController.xib in Resources */,
 				18857A1C20E285DC00EB2EB4 /* LaunchScreen.storyboard in Resources */,
+				1832C7EA20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */,
+				1808D3AB20E937E70012CFC2 /* PrepareViewController.xib in Resources */,
+				1832C80520E9276500407B74 /* TaskListTableViewController.xib in Resources */,
+				1832C7DE20E9259800407B74 /* sentaku_kago.png in Resources */,
+				1832C7B720E9259800407B74 /* kutsu_nugu_good.png in Resources */,
+				186DF75920E7D8D800C5375A /* nocheck.png in Resources */,
+				1832C7D220E9259800407B74 /* bluebird_baka.png in Resources */,
+				1832C7F320E9259800407B74 /* kouen_oyako.png in Resources */,
+				1832C7D820E9259800407B74 /* mushiyoke.png in Resources */,
+				1832C80B20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */,
+				1832C7F620E9259800407B74 /* kigaeGirl.png in Resources */,
+				1832C7BA20E9259800407B74 /* book_renrakuchou.png in Resources */,
+				1832C7C320E9259800407B74 /* tearai_hand_suidou.png in Resources */,
+				1832C7BD20E9259800407B74 /* family_bed_kawanoji.png in Resources */,
+				186DF75620E7D8D800C5375A /* check.png in Resources */,
+				1832C7B420E9259800407B74 /* ehon_hahako.png in Resources */,
+				1832C7C920E9259800407B74 /* family_hamigaki_shiage.png in Resources */,
+				1832C80820E9276500407B74 /* addOriginalTaskViewController.xib in Resources */,
+				1832C7C620E9259800407B74 /* text_kakko_kari.png in Resources */,
+				1832C7E420E9259800407B74 /* food_gohan.png in Resources */,
+				1832C7CF20E9259800407B74 /* home_kitaku_girl.png in Resources */,
+				18857A4220E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */,
+				1832C7CC20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */,
+				1832C7C020E9259800407B74 /* player_button08_plus.png in Resources */,
+				1832C7E120E9259800407B74 /* bed_girl_wake.png in Resources */,
+				18857A4620E28A2400EB2EB4 /* ViewController.xib in Resources */,
 				18857A1920E285DC00EB2EB4 /* Assets.xcassets in Resources */,
-				18857A1720E285D900EB2EB4 /* Main.storyboard in Resources */,
+				18860F8420E3CE970029DD00 /* NextViewController.xib in Resources */,
+				1832C7F020E9259800407B74 /* ensoku_goods.png in Resources */,
+				1832C7D520E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +547,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1832C80920E9276500407B74 /* addOriginalTaskViewController.xib in Resources */,
+				1832C7B820E9259800407B74 /* kutsu_nugu_good.png in Resources */,
+				1832C7C420E9259800407B74 /* tearai_hand_suidou.png in Resources */,
+				1832C7BE20E9259800407B74 /* family_bed_kawanoji.png in Resources */,
+				1832C7EE20E9259800407B74 /* toiletKid.png in Resources */,
+				1832C7E220E9259800407B74 /* bed_girl_wake.png in Resources */,
+				18860F8520E3CE970029DD00 /* NextViewController.xib in Resources */,
+				1832C7DC20E9259800407B74 /* ojigi_girl.png in Resources */,
+				1832C7D920E9259800407B74 /* mushiyoke.png in Resources */,
+				186DF75A20E7D8D800C5375A /* nocheck.png in Resources */,
+				1832C7D020E9259800407B74 /* home_kitaku_girl.png in Resources */,
+				1808D3AC20E937E70012CFC2 /* PrepareViewController.xib in Resources */,
+				1832C80620E9276500407B74 /* TaskListTableViewController.xib in Resources */,
+				1832C7DF20E9259800407B74 /* sentaku_kago.png in Resources */,
+				1832C7EB20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */,
+				1832C7D320E9259800407B74 /* bluebird_baka.png in Resources */,
+				1832C7CA20E9259800407B74 /* family_hamigaki_shiage.png in Resources */,
+				1832C7F420E9259800407B74 /* kouen_oyako.png in Resources */,
+				1832C79820E9222500407B74 /* TopViewController.xib in Resources */,
+				1832C7B520E9259800407B74 /* ehon_hahako.png in Resources */,
+				186DF75720E7D8D800C5375A /* check.png in Resources */,
+				1832C7BB20E9259800407B74 /* book_renrakuchou.png in Resources */,
+				1832C80C20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */,
+				1832C7CD20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */,
+				18857A4720E28A2400EB2EB4 /* ViewController.xib in Resources */,
+				1832C7C120E9259800407B74 /* player_button08_plus.png in Resources */,
+				1832C7F120E9259800407B74 /* ensoku_goods.png in Resources */,
+				1832C7E820E9259800407B74 /* pet_oyatsu_dog.png in Resources */,
+				1832C7D620E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */,
+				1832C7F720E9259800407B74 /* kigaeGirl.png in Resources */,
+				1832C7C720E9259800407B74 /* text_kakko_kari.png in Resources */,
+				1832C7E520E9259800407B74 /* food_gohan.png in Resources */,
+				18857A4320E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,18 +587,115 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1832C80A20E9276500407B74 /* addOriginalTaskViewController.xib in Resources */,
+				1832C7B920E9259800407B74 /* kutsu_nugu_good.png in Resources */,
+				1832C7C520E9259800407B74 /* tearai_hand_suidou.png in Resources */,
+				1832C7BF20E9259800407B74 /* family_bed_kawanoji.png in Resources */,
+				1832C7EF20E9259800407B74 /* toiletKid.png in Resources */,
+				1832C7E320E9259800407B74 /* bed_girl_wake.png in Resources */,
+				18860F8620E3CE970029DD00 /* NextViewController.xib in Resources */,
+				1832C7DD20E9259800407B74 /* ojigi_girl.png in Resources */,
+				1832C7DA20E9259800407B74 /* mushiyoke.png in Resources */,
+				186DF75B20E7D8D800C5375A /* nocheck.png in Resources */,
+				1832C7D120E9259800407B74 /* home_kitaku_girl.png in Resources */,
+				1808D3AD20E937E70012CFC2 /* PrepareViewController.xib in Resources */,
+				1832C80720E9276500407B74 /* TaskListTableViewController.xib in Resources */,
+				1832C7E020E9259800407B74 /* sentaku_kago.png in Resources */,
+				1832C7EC20E9259800407B74 /* pet_toilet_sheet_dog.png in Resources */,
+				1832C7D420E9259800407B74 /* bluebird_baka.png in Resources */,
+				1832C7CB20E9259800407B74 /* family_hamigaki_shiage.png in Resources */,
+				1832C7F520E9259800407B74 /* kouen_oyako.png in Resources */,
+				1832C79920E9222500407B74 /* TopViewController.xib in Resources */,
+				1832C7B620E9259800407B74 /* ehon_hahako.png in Resources */,
+				186DF75820E7D8D800C5375A /* check.png in Resources */,
+				1832C7BC20E9259800407B74 /* book_renrakuchou.png in Resources */,
+				1832C80D20E9276500407B74 /* TaskListDetailTableViewCell.xib in Resources */,
+				1832C7CE20E9259800407B74 /* shopping_supermarket_family_mother.png in Resources */,
+				18857A4820E28A2400EB2EB4 /* ViewController.xib in Resources */,
+				1832C7C220E9259800407B74 /* player_button08_plus.png in Resources */,
+				1832C7F220E9259800407B74 /* ensoku_goods.png in Resources */,
+				1832C7E920E9259800407B74 /* pet_oyatsu_dog.png in Resources */,
+				1832C7D720E9259800407B74 /* hanko_taihenyokudekimashita.png in Resources */,
+				1832C7F820E9259800407B74 /* kigaeGirl.png in Resources */,
+				1832C7C820E9259800407B74 /* text_kakko_kari.png in Resources */,
+				1832C7E620E9259800407B74 /* food_gohan.png in Resources */,
+				18857A4420E2876C00EB2EB4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10908FACA08FDFDED3ACCFBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginWithFirebaseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		495985F6A6B0E80C0E944A60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginWithFirebaseAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996CCCD18149C9F9D6A40E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginWithFirebaseAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18857A0820E285D900EB2EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1832C79A20E9222500407B74 /* TopViewController.m in Sources */,
+				183FF1EC20EA6D950014F25F /* ContentsManager.m in Sources */,
 				18857A1420E285D900EB2EB4 /* ViewController.m in Sources */,
+				18860F8720E3CE970029DD00 /* NextViewController.m in Sources */,
 				18857A1F20E285DC00EB2EB4 /* main.m in Sources */,
+				1832C80220E9276500407B74 /* addOriginalTaskViewController.m in Sources */,
+				1832C80E20E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */,
+				1808D3A820E937E70012CFC2 /* PrepareViewController.m in Sources */,
+				1832C81120E9276500407B74 /* TaskListTableViewController.m in Sources */,
 				18857A1120E285D900EB2EB4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +705,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18857A2920E285DD00EB2EB4 /* LoginWithFirebaseAppTests.m in Sources */,
+				18860F8820E3CE970029DD00 /* NextViewController.m in Sources */,
+				1832C81220E9276500407B74 /* TaskListTableViewController.m in Sources */,
+				1832C80F20E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */,
+				1808D3A920E937E70012CFC2 /* PrepareViewController.m in Sources */,
+				183FF1ED20EA6D950014F25F /* ContentsManager.m in Sources */,
+				1832C80320E9276500407B74 /* addOriginalTaskViewController.m in Sources */,
+				1832C79B20E9222500407B74 /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +720,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18857A3420E285DD00EB2EB4 /* LoginWithFirebaseAppUITests.m in Sources */,
+				18860F8920E3CE970029DD00 /* NextViewController.m in Sources */,
+				1832C81320E9276500407B74 /* TaskListTableViewController.m in Sources */,
+				1832C81020E9276500407B74 /* TaskListDetailTableViewCell.m in Sources */,
+				1808D3AA20E937E70012CFC2 /* PrepareViewController.m in Sources */,
+				183FF1EE20EA6D950014F25F /* ContentsManager.m in Sources */,
+				1832C80420E9276500407B74 /* addOriginalTaskViewController.m in Sources */,
+				1832C79C20E9222500407B74 /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +746,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18857A1520E285D900EB2EB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18857A1620E285D900EB2EB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18857A1A20E285DC00EB2EB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,11 +869,13 @@
 		};
 		18857A3920E285DD00EB2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9FE3837333970DA4DD0EC9 /* Pods-LoginWithFirebaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CSDJQMXG;
 				INFOPLIST_FILE = LoginWithFirebaseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +888,13 @@
 		};
 		18857A3A20E285DD00EB2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026BB4CC2DEBA15F340C12F7 /* Pods-LoginWithFirebaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CSDJQMXG;
 				INFOPLIST_FILE = LoginWithFirebaseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +907,7 @@
 		};
 		18857A3C20E285DD00EB2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9C65485B3CB0FAAC09D593 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +927,7 @@
 		};
 		18857A3D20E285DD00EB2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1EDFB32C16839FC25F3C92 /* Pods-LoginWithFirebaseAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +947,7 @@
 		};
 		18857A3F20E285DD00EB2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EAB9436351F55D5EE66ED9 /* Pods-LoginWithFirebaseAppUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CSDJQMXG;
@@ -521,6 +966,7 @@
 		};
 		18857A4020E285DD00EB2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A3069EABA9DE27CA8371C0 /* Pods-LoginWithFirebaseAppUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9CSDJQMXG;

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Firebase;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
-
+@property (nonatomic) BOOL *firstFlag;
 @end
 

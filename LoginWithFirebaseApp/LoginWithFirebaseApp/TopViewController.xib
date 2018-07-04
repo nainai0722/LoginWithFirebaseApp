@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="collectBtn" destination="21D-dZ-F0B" id="Nyv-Sy-fwP"/>
+                <outletCollection property="collectBtn" destination="cdj-me-QoH" id="PlL-bX-yTH"/>
+                <outletCollection property="collectBtn" destination="0K4-ja-xWa" id="kHf-TS-aRW"/>
+                <outletCollection property="collectBtn" destination="eOT-IT-bcJ" id="Dg6-yI-qOP"/>
+                <outletCollection property="collectBtn" destination="nH5-Yz-luJ" id="2Ej-kT-lGP"/>
+                <outletCollection property="collectBtn" destination="f2o-H2-hHr" id="xiT-Ua-uns"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お支度ボードアプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWz-BE-sfe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zs1-2F-1Eh">
+                    <rect key="frame" x="0.0" y="99.5" width="375" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOT-IT-bcJ">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+                            <state key="normal" title="おはようの支度" image="bed_girl_wake.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="YID-yc-Fxj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH5-Yz-luJ">
+                            <rect key="frame" x="125" y="0.0" width="125" height="150"/>
+                            <state key="normal" title="おかえりの支度" image="home_kitaku_girl.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="S3n-wh-IpH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2o-H2-hHr">
+                            <rect key="frame" x="250" y="0.0" width="125" height="150"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="30" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="-20" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="おやすみの支度" image="family_bed_kawanoji.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="Dn4-Ww-5XK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="PpA-le-cUb"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-3D-Srd">
+                    <rect key="frame" x="0.0" y="434" width="375" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21D-dZ-F0B">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+                            <state key="normal" title="お出掛けの支度" image="kouen_oyako.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="1Yc-Os-e33"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-me-QoH">
+                            <rect key="frame" x="125" y="0.0" width="125" height="150"/>
+                            <state key="normal" title="お買い物の支度" image="shopping_supermarket_family_mother.png"/>
+                            <connections>
+                                <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="2VY-Mb-CPI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-ja-xWa">
+                            <rect key="frame" x="250" y="0.0" width="125" height="150"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="30" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="-20" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="追加する" image="player_button08_plus.png"/>
+                            <connections>
+                                <action selector="touchAddOriginalTask:" destination="-1" eventType="touchUpInside" id="xyt-pP-1gm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Smv-yG-QRd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DVZ-3D-Srd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6nm-bP-mCr"/>
+                <constraint firstItem="Zs1-2F-1Eh" firstAttribute="leading" secondItem="sWz-BE-sfe" secondAttribute="leading" id="CCl-tW-5HJ"/>
+                <constraint firstItem="DVZ-3D-Srd" firstAttribute="trailing" secondItem="sWz-BE-sfe" secondAttribute="trailing" id="GSo-IS-rUu"/>
+                <constraint firstItem="sWz-BE-sfe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IMk-Xs-lzN"/>
+                <constraint firstItem="DVZ-3D-Srd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="OkA-51-D1e"/>
+                <constraint firstItem="DVZ-3D-Srd" firstAttribute="leading" secondItem="sWz-BE-sfe" secondAttribute="leading" id="Sr0-VF-Qpk"/>
+                <constraint firstItem="DVZ-3D-Srd" firstAttribute="top" secondItem="sWz-BE-sfe" secondAttribute="bottom" constant="413.5" id="ehj-EZ-NYo"/>
+                <constraint firstItem="Zs1-2F-1Eh" firstAttribute="top" secondItem="sWz-BE-sfe" secondAttribute="bottom" constant="79" id="gXB-rt-dcH"/>
+                <constraint firstItem="Zs1-2F-1Eh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="to6-0L-hva"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="13.5" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bed_girl_wake.png" width="373" height="400"/>
+        <image name="family_bed_kawanoji.png" width="392" height="450"/>
+        <image name="home_kitaku_girl.png" width="358" height="400"/>
+        <image name="kouen_oyako.png" width="500" height="347"/>
+        <image name="player_button08_plus.png" width="115" height="115"/>
+        <image name="shopping_supermarket_family_mother.png" width="323" height="450"/>
+    </resources>
+</document>

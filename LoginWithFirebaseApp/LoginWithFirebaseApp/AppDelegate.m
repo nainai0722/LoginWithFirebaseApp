@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+@import Firebase;
+#import <FirebaseAuth.h>
+#import <FIRDatabase.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIRApp configure];
+#pragma mark -xib化
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSString *uid = [FIRAuth auth].currentUser.uid;
+//        View
+        self.ViewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    if (uid == nil) {
+        self.ViewController.firstFlag = YES;
+    }else{
+        self.ViewController.firstFlag = NO;
+    }
+    
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: self.ViewController];
+        
+        navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.6392 green:0.709 blue:0.3529 alpha:1.0];
+        navigationController.navigationBar.tintColor = [UIColor whiteColor];
+        navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+        self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
