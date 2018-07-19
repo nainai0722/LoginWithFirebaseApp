@@ -13,6 +13,7 @@
     int _remainingTaskNum; //インスタンス変数
     NSMutableArray *_use;
     ContentsManager *_ctManager;
+    UIImage *_dlImage;
 }
 @property (weak, nonatomic) IBOutlet UIButton *petToiletBtn;
 @property (weak, nonatomic) IBOutlet UIButton *kigae;
@@ -33,8 +34,7 @@
 @property( nonatomic)BOOL comp9;
 @property (weak, nonatomic) IBOutlet UILabel *TaskName;
 @property (weak, nonatomic) IBOutlet UIButton *allActionCompBtn;
-
-//@property (strong, nonatomic) FIRDatabaseReference *ref;
+@property (strong, nonatomic) FIRStorageReference *storageRef;
 @end
 
 @implementation PrepareViewController
@@ -46,7 +46,6 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *str = [ud stringForKey:@"taskName"];
     self.TaskName.text = str;
-    
     self.allActionCompBtn.hidden = YES;
     
     self.isCompBtn = NO;
@@ -61,43 +60,53 @@
     self.comp8 = NO;
 
     
-//    self.ref = [[FIRDatabase database] reference];
-//    NSString *userID = [FIRAuth auth].currentUser.uid;
-    
-//    [[[_ref child:@"users"] child:userID] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-//        // Get user value
-//        NSLog(@"snapShot %@",snapshot);
-////        NSLog(@"userName %@",snapshot.value[@"username"]);
-//        self.imageDic = snapshot.value[@"userData"];
-//    } withCancelBlock:^(NSError * _Nonnull error) {
-//        NSLog(@"%@", error.localizedDescription);
-//    }];
-    
     if (self.imageDic == nil) {
         self.imageDic = _ctManager.imageDic;
     }
     
     _use = [[NSMutableArray alloc] init];
-    
+//    prepareAction はTaskListViewControllerで追加したタスクの配列入り。
     for (int i=0; i<[self.prepareAction count]; i++) {
         NSString *str =  [self.prepareAction objectAtIndex:i];
         if([self.imageDic objectForKey:str] != nil){
+            NSRange range = [str rangeOfString:@"images/"];
+//            if (range.location == NSNotFound) {
+//                NSLog(@"検索対象が存在しない場合の処理");
+//                [_use addObject: @{str:self.imageDic[str]}];
+//            }else{
+//
+//            }
+            
             [_use addObject: @{str:self.imageDic[str]}];
         }else{
-            [_use addObject: @{str:[NSString stringWithFormat:@"%@/originalTaskImage.png" , [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]]}];
+            [_use addObject: @{str:[NSString stringWithFormat:@"image/test%ld.png",[self.imageDic count]+1]}];
         }
     }
     int countList = 0;
     _remainingTaskNum = (int)[_use count]-1;
     for (UIButton *button in self.aspectBtn) {
-        
         if (countList+1 > [self.prepareAction count]) {
             button.hidden= YES;
         }else{
-//        存在しない画像であれば、ローカルから取得してくる。
-            
-        NSString *imgName = [[_use objectAtIndex:countList] objectForKey:[self.prepareAction objectAtIndex:countList]];
+            FIRStorage *imageStorage = [FIRStorage storage];
+            self.storageRef = [imageStorage reference];
+//            FIRStorageReference *reference = [self.storageRef child:self.imageDic[str]];
+            NSString *imageKey =  [self.prepareAction objectAtIndex:countList];
+            FIRStorageReference *reference = [self.storageRef child:self.imageDic[imageKey]];
             UIImage *img;
+            [reference dataWithMaxSize:1 * 1024 * 1024 completion:^(NSData *data, NSError *error){
+                if (error != nil) {
+                    // Uh-oh, an error occurred!
+                } else {
+                    // Data for "images/island.jpg" is returned
+                    UIImage *islandImage = [UIImage imageWithData:data];
+                    [button setImage:islandImage forState:UIControlStateNormal];
+                }
+            }];
+
+
+        NSString *imgName = [[_use objectAtIndex:countList] objectForKey:[self.prepareAction objectAtIndex:countList]];
+
             if (imgName == nil) {
                 NSString *filePath = [NSString stringWithFormat:@"%@/originalTaskImage.png" , [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]];
                 img = [UIImage imageNamed:filePath];
@@ -108,7 +117,7 @@
             countList++;
         button.imageView.contentMode = UIViewContentModeScaleAspectFit;
         }
-        
+
     }
 
 }

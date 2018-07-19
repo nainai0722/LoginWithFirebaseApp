@@ -49,6 +49,7 @@
     [ud synchronize];
     
     TaskListTableViewController *vc = [[TaskListTableViewController alloc] init];
+    vc.imageDic = _ctManager.imageDic;
     [self presentViewController:vc animated:YES completion:nil];
 }
 - (IBAction)touchAddOriginalTask:(id)sender {

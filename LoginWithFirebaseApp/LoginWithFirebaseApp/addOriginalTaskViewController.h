@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)updateTaskDetailActin:(NSString*)str img:(UIImage*)img indexPath:(NSIndexPath*)indexPath;
 @end
 @interface addOriginalTaskViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
-@property (nonatomic) NSInteger *fromView;      // 1の時はTopViewからの呼び出し　２の時はTaskListTableViewからの呼び出しと定義する
-@property (nonatomic) NSInteger *fromCellRow;
+@property (nonatomic) NSInteger fromView;      // 1の時はTopViewからの呼び出し　２の時はTaskListTableViewからの呼び出しと定義する
+@property (nonatomic) NSInteger fromCellRow;
 @property (nonatomic) NSIndexPath *fromViewIndexPath;
 
 /**

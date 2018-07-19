@@ -28,6 +28,8 @@
     return self;
 }
 
+
+
 // データ読みこんで保持します
 - (void)readData{
     //    yourData
@@ -46,6 +48,57 @@
             self.imageDic = [self defaultyourData];
         }else{
             self.imageDic = userdata;
+        }
+        // ...
+    } withCancelBlock:^(NSError * _Nonnull error) {
+        NSLog(@"%@", error.localizedDescription);
+    }];
+}
+
+- (NSInteger)imgaeDicNum{
+    
+    if (self.imageDic == nil) {
+        
+        self.ref = [[FIRDatabase database] reference];
+        NSString *userID = [FIRAuth auth].currentUser.uid;
+        [[[self.ref child:@"users"] child:userID] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            // Get user value
+            NSLog(@"snapShot %@",snapshot);
+            NSLog(@"userName %@",snapshot.value[@"username"]);
+            NSDictionary *userdata = snapshot.value[@"userData"];
+            if ([userdata count] == 0) {
+                [[[[self.ref child:@"users"] child:userID] child:@"userData"] setValue:[self defaultyourData]];
+                self.imageDic = [self defaultyourData];
+            }else{
+                self.imageDic = userdata;
+            }
+            // ...
+        } withCancelBlock:^(NSError * _Nonnull error) {
+            NSLog(@"%@", error.localizedDescription);
+        }];
+    }
+    
+    return [self.imageDic count];
+}
+
+// アップデートします
+- (void)updateData:(NSString *)dateStr withImgStr:(NSString *)imageName{
+    //    yourData
+    self.ref = [[FIRDatabase database] reference];
+    NSString *userID = [FIRAuth auth].currentUser.uid;
+    
+    [[[[self.ref child:@"users"] child:userID] child:@"userData"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        // Get user value
+        NSLog(@"add Date Str %@",snapshot.value[dateStr]);
+        NSDictionary *userdata = snapshot.value[dateStr];
+        if ([userdata count] == 0) {
+            [[[[[self.ref child:@"users"] child:userID] child:@"userData"] child:dateStr] setValue:imageName];
+        }else{
+            NSString *key = [[self.ref child:@"userData"] childByAutoId].key;
+            NSDictionary *post = @{imageName:imageName};
+            NSDictionary *childUpdates = @{[@"/users/" stringByAppendingString:key]: post,
+                                           [NSString stringWithFormat:@"/%@/", userID]: post};
+            [self.ref updateChildValues:childUpdates];
         }
         // ...
     } withCancelBlock:^(NSError * _Nonnull error) {

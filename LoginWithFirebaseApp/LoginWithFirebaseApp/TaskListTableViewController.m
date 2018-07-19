@@ -9,7 +9,6 @@
 #import "TaskListTableViewController.h"
 #import "ViewController.h"
 #import "PrepareViewController.h"
-//#import "NSAttributedString+img.h"
 #import "addOriginalTaskViewController.h"
 #import "ContentsManager.h"
 
@@ -18,7 +17,7 @@
     int _selfWidth;
     int _selfHeight;
     ContentsManager *_ctManager;
-    NSDictionary *_imageDic;
+    
 }
 
 @end
@@ -26,7 +25,7 @@
 @implementation TaskListTableViewController
 
 -(void)viewWillAppear:(BOOL)animated{
-     _prepareActionHeaderSectionArry = @[@"おはようの支度",@"おかえりの支度",@"おやすみの支度"];
+//     _prepareActionHeaderSectionArry = @[@"おはようの支度",@"おかえりの支度",@"おやすみの支度"];
 }
 
 - (void)viewDidLoad {
@@ -34,6 +33,9 @@
     isTouchBtn = NO;
     self.prepareActionArry = [[NSMutableArray alloc] init];
     _ctManager = [[ContentsManager alloc] init];
+    if (self.imageDic == nil) {
+        self.imageDic = _ctManager.imageDic;
+    }
     UINib *nib = [UINib nibWithNibName:@"TaskListDetailTableViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
    
@@ -57,7 +59,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
 //    return [_prepareActionHeaderSectionArry count];
-    return 3;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section{
@@ -76,14 +78,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // カスタムセルを取得
     TaskListDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    /*
     NSArray *arr = @[@[@{@"key":@"着替え"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"朝ごはん"},@{@"key":@"虫除けスプレー"}],@[@{@"key":@"靴を脱ぐ"},@{@"key":@"手洗い"},@{@"key":@"挨拶"},@{@"key":@"洗濯機に制服投入"},@{@"key":@"ハロ君に夕飯"}],@[@{@"key":@"絵本選ぶ"},@{@"key":@"歯磨き"},@{@"key":@"トイレ"},@{@"key":@"連絡帳確認"},@{@"key":@"twitter"}]];
-    cell.HeaderLabel.text =  [[arr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row][@"key"];
+     */
+    
+    NSArray *arr = [self.imageDic allValues];
+//    cell.HeaderLabel.text =  [[arr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row][@"key"];
+    cell.HeaderLabel.text =  [arr objectAtIndex:indexPath.row];
     cell.delegate = self;
     
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary* imageDic = [defaults dictionaryForKey:@"imageDic"];
+//    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+//    NSDictionary* imageDic = [defaults dictionaryForKey:@"imageDic"];
+//    NSDictionary *imageDic = _ctManager.imageDic;
     
-    [cell.cellTaskImage setImage: [UIImage imageNamed:[imageDic objectForKey:cell.HeaderLabel.text]]];
+    [cell.cellTaskImage setImage: [UIImage imageNamed:[self.imageDic objectForKey:cell.HeaderLabel.text]]];
     cell.cellTaskImage.contentMode = UIViewContentModeScaleAspectFit;
     
     return cell;
@@ -135,6 +143,12 @@
     cell.cellTaskImage.contentMode = UIViewContentModeScaleAspectFit;
     cell.HeaderLabel.text = str;
     [self.prepareActionArry addObject:cell.HeaderLabel.text];
+    
+//    imgaDicのデータ再取得
+    if (_ctManager != nil) {
+        _ctManager = nil;
+        _ctManager = [[ContentsManager alloc] init];
+    }
 }
 
 - (void)touchTaskStartBtn:(UIButton*)sender{

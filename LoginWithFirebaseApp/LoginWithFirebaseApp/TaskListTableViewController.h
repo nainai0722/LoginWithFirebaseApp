@@ -13,4 +13,5 @@
 @property (nonatomic)  NSMutableArray *prepareActionArry;
 @property (weak,nonatomic)  NSMutableArray *prepareActionHeaderSectionArry;
 @property(strong,nonatomic)TaskListDetailTableViewCell *detailCell;
+@property(strong,nonatomic)NSDictionary *imageDic;
 @end

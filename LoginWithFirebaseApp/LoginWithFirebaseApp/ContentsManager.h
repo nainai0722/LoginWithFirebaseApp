@@ -10,4 +10,7 @@
 @import Firebase;
 @interface ContentsManager : NSObject
 @property (strong,nonatomic) NSDictionary * imageDic;
+//@property (strong,nonatomic) NSInteger *imageDicNum;
+- (void)updateData:(NSString *)dateStr withImgStr:(NSString *)imageName;
+- (NSInteger)imgaeDicNum;
 @end

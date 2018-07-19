@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.ref = [[FIRDatabase database] reference];
+//    self.ref = [[FIRDatabase database] reference];
     
     /*データを引っ張り出す*/
     NSString *userID = [FIRAuth auth].currentUser.uid;
